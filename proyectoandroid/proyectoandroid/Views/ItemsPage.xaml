@@ -114,7 +114,8 @@
                     <x:String>Caotico Maligno</x:String>
                 </Picker.Items>
             </Picker>
-
+            <Button Grid.Column="0" Grid.Row="17" Text="Añadir" Grid.ColumnSpan="2"/>
+            <Button Grid.Column="4" Grid.Row="17" Text="Buscar" Grid.ColumnSpan="2"/>
 
         </Grid>
     </ScrollView>

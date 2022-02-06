@@ -121,6 +121,7 @@
                 <Setter Property="CornerRadius" Value="10"/>
                 <Setter Property="Grid.ColumnSpan" Value="6"/>
             </Style>
+            
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

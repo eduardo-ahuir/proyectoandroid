@@ -47,9 +47,13 @@
 
 
         <BoxView Grid.Column="0" class="containern"/>
+        
+
         <Label Text="FUE" Grid.Column="0" Grid.Row="3" class="stat"/>
         <Label Text="+5"  Grid.Column="0" Grid.Row="3" class="stat2"/>
-        <Label Text="20"  Grid.Column="0" Grid.Row="3" class="stat3" />
+        <Label Text="20"  Grid.Column="0" Grid.Row="3" class="stat3"/>
+       
+           
         <BoxView Grid.Column="1" class="containern"/>
         <Label Text="DES" Grid.Column="1" Grid.Row="3" class="stat" />
         <Label Text="+5" Grid.Column="1" Grid.Row="3" class="stat2"/>
