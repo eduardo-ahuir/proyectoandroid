@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoandroid.Views.AboutPage"
+             xmlns:vm="clr-namespace:proyectoandroid.ViewModels"
+             Title="Paginaprincipal"
+             Visual="Material">
+
+
+
+
+
+    <Grid Margin="10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" class="texto"/>
+        <BoxView Color="#cdccac" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6"/>
+        <Image Source="https://cdn.discordapp.com/attachments/767154058272178261/878789525151825951/medium-838b83c553eeca3aabb66f72ee2648141bdf7dc7.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6"/>
+        <Label Grid.Column="1" Grid.Row="2" Text="Clase:Guerrero" Grid.ColumnSpan="2" class="texto"/>
+        <Label Grid.Column="3" Grid.Row="2" Text="Raza:Hipotido"  Grid.ColumnSpan="2" class="texto"/>
+        
+        
+        
+        
+
+        <BoxView Color="Black" Grid.Column="0" Grid.Row="3"/>
+        <Label Text="FUE" Grid.Column="0" Grid.Row="3" class="stat"/>
+        <Label Text="+5"  Grid.Column="0" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="0" Grid.Row="3" class="stat3" />
+        <BoxView Color="Black" Grid.Column="1" Grid.Row="3"/>
+        <Label Text="DES" Grid.Column="1" Grid.Row="3" class="stat" />
+        <Label Text="+5" Grid.Column="1" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="1" Grid.Row="3" class="stat3"  />
+        <BoxView Color="Black" Grid.Column="2" Grid.Row="3"/>
+        <Label Text="CON" Grid.Column="2" Grid.Row="3" class="stat"/>
+        <Label Text="+5"  Grid.Column="2" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="2" Grid.Row="3" class="stat3" />
+        <BoxView Color="Black" Grid.Column="3" Grid.Row="3"/>
+        <Label Text="INT" Grid.Column="3" Grid.Row="3" class="stat"/>
+        <Label Text="+5"  Grid.Column="3" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="3" Grid.Row="3" class="stat3"  />
+        <BoxView Color="Black" Grid.Column="4" Grid.Row="3"/>
+        <Label Text="SAB" Grid.Column="4" Grid.Row="3" class="stat"/>
+        <Label Text="+5"  Grid.Column="4" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="4" Grid.Row="3" class="stat3"/>
+        <BoxView Color="Black" Grid.Column="5" Grid.Row="3"/>
+        <Label Text="CAR" Grid.Column="5" Grid.Row="3" class="stat"/>
+        <Label Text="+5"  Grid.Column="5" Grid.Row="3" class="stat2"/>
+        <Label Text="20"  Grid.Column="5" Grid.Row="3" class="stat3"/>
+
+
+        <BoxView Grid.Column="0" Grid.Row="4" class="container"/>
+        <Label Text="Rasgo:" Grid.Column="0" Grid.Row="4" class="containertext" />
+        <Label Text="Ideal:" Grid.Column="0" Grid.Row="5" class="containertext" />
+        <Label Text="Vinculo:" Grid.Column="0" Grid.Row="6" class="containertext"  />
+        <Label Text="Defecto:" Grid.Column="0" Grid.Row="7" class="containertext"/>
+        <Label Text="Objeto:" Grid.Column="0" Grid.Row="9" class="containertext"/>
+        <Label Text="Moral:" Grid.Column="0" Grid.Row="8" class="containertext"/>
+
+        <Picker Title="Elige la clase" Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="3" class="Picker">
+            <Picker.Items>
+                <x:String>Barbaro</x:String>
+                <x:String>Bardo</x:String>
+                <x:String>Brujo</x:String>
+                <x:String>Clerigo</x:String>
+                <x:String>Druida</x:String>
+                <x:String>Explorador</x:String>
+                <x:String>Guerrero</x:String>
+                <x:String>Hechicero</x:String>
+                <x:String>Mago</x:String>
+                <x:String>Monje</x:String>
+                <x:String>Paladin</x:String>
+                <x:String>Picaro</x:String>
+            </Picker.Items>
+
+
+        </Picker>
+        <Picker Title="Elige la Raza" Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="3" class="Picker">
+            <Picker.Items>
+                <x:String>Araina</x:String>
+                <x:String>Batrok</x:String>
+                <x:String>Centauro</x:String>
+                <x:String>Draconido</x:String>
+                <x:String>Elfo</x:String>
+                <x:String>Enano</x:String>
+                <x:String>Felinido</x:String>
+                <x:String>Formigo</x:String>
+                <x:String>Gnomo</x:String>
+                <x:String>Hipotido</x:String>
+                <x:String>Humano</x:String>
+                <x:String>Karasu</x:String>
+                <x:String>Kitsune</x:String>
+                <x:String>Mediano</x:String>
+                <x:String>Mida</x:String>
+                <x:String>Morlock</x:String>
+                <x:String>Orco</x:String>
+                <x:String>Rakshasa</x:String>
+                <x:String>Saurio</x:String>
+                <x:String>Semielfo</x:String>
+                <x:String>Semiorco</x:String>
+                <x:String>Tiefling</x:String>
+                <x:String>viperoa</x:String>
+
+            </Picker.Items>
+
+
+        </Picker>
+        <Button Grid.Column="2" Grid.Row="12" Grid.ColumnSpan="3" Text="Generar" class="generabutn"/>
+    </Grid>
+
+
+
+
+
+
+</ContentPage>
