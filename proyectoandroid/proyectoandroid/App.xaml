@@ -49,7 +49,7 @@
                 <Setter Property="FontFamily" Value="times new roman"/>
             </Style>
             <Style TargetType="BoxView" Class="container">
-                <Setter Property="BackgroundColor" Value="#abc4c9"/>
+                <Setter Property="BackgroundColor" Value="#639099"/>
                 <Setter Property="Grid.RowSpan" Value="6"/>
                 <Setter Property="Grid.ColumnSpan" Value="6"/>
                 <Setter Property="CornerRadius" Value="10"/>
@@ -67,7 +67,8 @@
                 <Setter Property="FontSize" Value="18"/>
                 <Setter Property="FontFamily" Value="Open Sans"/> 
                 <Setter Property="TitleColor" Value="Black"/>
-                
+                <Setter Property="BackgroundColor" Value="#639099"/>
+
             </Style>
             <Style TargetType="Button" Class="generabutn">
                 <Setter Property="TextColor" Value="White"/>
@@ -86,7 +87,40 @@
             <Style TargetType="Grid" Class="fondo">
                 <Setter Property="BackgroundColor" Value="#abc4c9"/>
             </Style>
+            <Style TargetType="Label" Class="titulos">
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontFamily" Value="Open Sans"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
 
+            </Style>
+            <Style TargetType="Entry" Class="input">
+                <Setter Property="Grid.Column" Value="0"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
+                <Setter Property="BackgroundColor" Value="AntiqueWhite"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontFamily" Value="Open sans"/>
+            </Style>
+            <Style TargetType="BoxView" Class="container2">
+                <Setter Property="BackgroundColor" Value="AntiqueWhite"/>
+                <Setter Property="Grid.RowSpan" Value="6"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Grid.Column" Value="0"/>
+            </Style>
+            <Style TargetType="BoxView" Class="containern">
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="Grid.Row" Value="3"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+            <Style TargetType="BoxView" Class="containerd">
+                <Setter Property="BackgroundColor" Value="#cdccac"/>
+                <Setter Property="Grid.Row" Value="1"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
+            </Style>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
