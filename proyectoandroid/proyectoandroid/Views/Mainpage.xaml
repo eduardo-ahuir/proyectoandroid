@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyectoandroid.Views.AboutPage"
              xmlns:vm="clr-namespace:proyectoandroid.ViewModels"
-             Title="Paginaprincipal"
+             Title="Generador"
              Visual="Material">
 
 

@@ -9,7 +9,7 @@ namespace proyectoandroid.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "Generador";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
