@@ -48,7 +48,7 @@
         <BoxView Grid.Row="3" class="container2"/>
         <Entry Grid.Row="4" Placeholder="Elige el nombre" class="input"/>
         
-        <Picker Title="Elige la clase" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="6" class="Picker">
+        <Picker Title="Elige la clase" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="6" class="Picker" x:Name="clase">
             <Picker.Items>
                 <x:String>Barbaro</x:String>
                 <x:String>Bardo</x:String>
@@ -95,8 +95,8 @@
         </Picker>
         <Entry Grid.Row="7" Grid.Column="0" Placeholder="Url para la imagen del personaje" class="input"/>
         <Label Grid.Row="9" Grid.Column="0" Text="Transfondo" class="titulos" />
-        <BoxView class="container2" Grid.Row="11" Grid.RowSpan="8"/>
-        <Entry Grid.Row="11" Placeholder="Rasgo" class="input"/>
+            <BoxView class="container2" Grid.Row="11" Grid.RowSpan="8"/>
+            <Entry Grid.Row="11" Placeholder="Rasgo" class="input"/>
         <Entry Grid.Row="12" Placeholder="Ideal"  class="input"/>
         <Entry Grid.Row="13" Placeholder="Vinculo" class="input"/>
         <Entry Grid.Row="14" Placeholder="Defecto" class="input"/>

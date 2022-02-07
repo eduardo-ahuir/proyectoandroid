@@ -28,21 +28,21 @@
                 </Setter>
             </Style>
             <Style TargetType="Label" Class="stat">
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="VerticalTextAlignment" Value="Start"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="16"/>
                 <Setter Property="FontFamily" Value="times new roman"/>
             </Style>
             <Style TargetType="Label" Class="stat2">
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="FontFamily" Value="times new roman"/>
             </Style>
             <Style TargetType="Label" Class="stat3">
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="VerticalTextAlignment" Value="End"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="12"/>
@@ -111,14 +111,20 @@
                 <Setter Property="Grid.Column" Value="0"/>
             </Style>
             <Style TargetType="BoxView" Class="containern">
-                <Setter Property="BackgroundColor" Value="Black"/>
-                <Setter Property="Grid.Row" Value="3"/>
+                <Setter Property="BackgroundColor" Value="#cbe2db"/>
+                <Setter Property="Grid.Row" Value="16"/>
                 <Setter Property="CornerRadius" Value="10"/>
             </Style>
             <Style TargetType="BoxView" Class="containerd">
                 <Setter Property="BackgroundColor" Value="#cdccac"/>
                 <Setter Property="Grid.Row" Value="1"/>
                 <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
+            </Style>
+            <Style TargetType="BoxView" Class="containert">
+                <Setter Property="BackgroundColor" Value="#cbe2db"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Grid.Column" Value="0"/>
                 <Setter Property="Grid.ColumnSpan" Value="6"/>
             </Style>
             

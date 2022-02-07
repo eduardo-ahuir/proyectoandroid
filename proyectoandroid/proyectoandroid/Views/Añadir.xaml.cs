@@ -21,6 +21,7 @@ namespace proyectoandroid.Views
             InitializeComponent();
 
             BindingContext = _viewModel = new ItemsViewModel();
+            
         }
 
         protected override void OnAppearing()
