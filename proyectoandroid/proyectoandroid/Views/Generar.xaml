@@ -10,7 +10,7 @@
 
 
 
-    <ScrollView>
+    
     <Grid Margin="10" class="fondo">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -29,7 +29,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.6*"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -39,7 +39,9 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+
+
             </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -50,11 +52,13 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" class="texto" BackgroundColor="#cbe2db"  FontAttributes="Bold"/>
+        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" class="texto" FontAttributes="Bold" HorizontalOptions="Center" Grid.ColumnSpan="6"/>
         <BoxView Grid.Column="0" class="containerd" Grid.RowSpan="14"/>
         <Image Source="https://cdn.discordapp.com/attachments/767154058272178261/878789525151825951/medium-838b83c553eeca3aabb66f72ee2648141bdf7dc7.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="14"/>
-        <Label Grid.Column="1" Grid.Row="15" Text="Clase:Guerrero" Grid.ColumnSpan="2" class="texto" BackgroundColor="#cbe2db" TextDecorations="Underline"/>
-        <Label Grid.Column="3" Grid.Row="15" Text="Raza:Hipotido"  Grid.ColumnSpan="2" class="texto" BackgroundColor="#cbe2db" TextDecorations="Underline" />
+            
+        <Label Grid.Column="1" Grid.Row="15" Text="Clase:Guerrero" Grid.ColumnSpan="2" class="texto" />
+         
+            <Label Grid.Column="3" Grid.Row="15" Text="Raza:Hipotido"  Grid.ColumnSpan="2" class="texto"  />
 
 
 
@@ -64,8 +68,8 @@
 
 
         <Label Text="FUE" Grid.Column="0" Grid.Row="16" class="stat"/>
-        <Label Text="+5"  Grid.Column="0" Grid.Row="16" class="stat2"/>
-        <Label Text="20"  Grid.Column="0" Grid.Row="16" class="stat3"/>
+        <Label Text="+5"  Grid.Column="0" Grid.Row="16" class="stat2" />
+        <Label Text="20"  Grid.Column="0" Grid.Row="16" class="stat3" />
         <BoxView Grid.Column="1" class="containern"/>
         <Label Text="DES" Grid.Column="1" Grid.Row="16" class="stat" />
         <Label Text="+5" Grid.Column="1" Grid.Row="16" class="stat2"/>
@@ -102,7 +106,7 @@
         <BoxView Grid.Row="22" class="containert"/>
         <Label Text="Objeto:"  Grid.Row="22" class="containertext"/>
         
-        <Picker Title="clase" Grid.Column="0" Grid.Row="24" Grid.ColumnSpan="3" class="Picker" FontAttributes="Bold">
+        <Picker Title="Clase" Grid.Column="0" class="Picker">
             <Picker.Items>
                 <x:String>Barbaro</x:String>
                 <x:String>Bardo</x:String>
@@ -120,7 +124,7 @@
 
 
         </Picker>
-        <Picker Title="Raza" Grid.Column="3" Grid.Row="24" Grid.ColumnSpan="3" class="Picker" FontAttributes="Bold">
+        <Picker Title="Raza" Grid.Column="3" class="Picker">
             <Picker.Items>
                 <x:String>Araina</x:String>
                 <x:String>Batrok</x:String>
@@ -150,9 +154,10 @@
 
 
         </Picker>
-        <Button Grid.Column="1" Grid.Row="23" Grid.ColumnSpan="4" Text="Generar" class="generabutn" FontAttributes="Bold"/>
+        <Button Grid.Row="25" Text="Generar" class="generabutn"/>
+    
     </Grid>
-    </ScrollView>
+    
 
 
 

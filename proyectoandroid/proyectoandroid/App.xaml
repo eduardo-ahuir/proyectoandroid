@@ -38,8 +38,9 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
-                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontSize" Value="15"/>
                 <Setter Property="FontFamily" Value="times new roman"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
             <Style TargetType="Label" Class="stat3">
                 <Setter Property="TextColor" Value="Black"/>
@@ -68,21 +69,28 @@
                 <Setter Property="FontFamily" Value="Open Sans"/> 
                 <Setter Property="TitleColor" Value="Black"/>
                 <Setter Property="BackgroundColor" Value="#639099"/>
+                <Setter Property="Grid.ColumnSpan" Value="3"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Grid.Row" Value="23"/>
 
             </Style>
             <Style TargetType="Button" Class="generabutn">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="18"/>
                 <Setter Property="BackgroundColor" Value="Coral"/>
+                <Setter Property="Grid.ColumnSpan" Value="6"/>
+                <Setter Property="Grid.Column" Value="0"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
 
             </Style>
             <Style TargetType="Label" Class="texto">
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
-                <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="18"/>
                 <Setter Property="FontFamily" Value="Open Sans"/>
                 <Setter Property="TextColor" Value="Black"/>
-                
+                <Setter Property="Background" Value="#cbe2db"/>
+                <Setter Property="Grid.ColumnSpan" Value="2"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
             </Style>
             <Style TargetType="Grid" Class="fondo">
                 <Setter Property="BackgroundColor" Value="#abc4c9"/>

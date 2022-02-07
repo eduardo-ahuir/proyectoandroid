@@ -15,6 +15,7 @@ namespace proyectoandroid.Views
         public Generar()
         {
             InitializeComponent();
+                
         }
     }
 }

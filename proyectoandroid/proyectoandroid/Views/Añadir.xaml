@@ -48,7 +48,7 @@
         <BoxView Grid.Row="3" class="container2"/>
         <Entry Grid.Row="4" Placeholder="Elige el nombre" class="input"/>
         
-        <Picker Title="Elige la clase" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="6" class="Picker" x:Name="clase">
+        <Picker Title="Clase" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="6" class="Picker" x:Name="clase">
             <Picker.Items>
                 <x:String>Barbaro</x:String>
                 <x:String>Bardo</x:String>
@@ -64,7 +64,7 @@
                 <x:String>Picaro</x:String>
             </Picker.Items>
         </Picker>
-        <Picker Title="Elige la Raza" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="6" class="Picker">
+        <Picker Title="Raza" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="6" class="Picker">
             <Picker.Items>
                     <x:String>Araina</x:String>
                     <x:String>Batrok</x:String>
@@ -114,8 +114,8 @@
                     <x:String>Caotico Maligno</x:String>
                 </Picker.Items>
             </Picker>
-            <Button Grid.Column="0" Grid.Row="17" Text="Añadir" Grid.ColumnSpan="2"/>
-            <Button Grid.Column="4" Grid.Row="17" Text="Buscar" Grid.ColumnSpan="2"/>
+            <Button Grid.Column="0" Grid.Row="17" Text="Añadir" Grid.ColumnSpan="3"/>
+            <Button Grid.Column="3" Grid.Row="17" Text="Buscar" Grid.ColumnSpan="3"/>
 
         </Grid>
     </ScrollView>
