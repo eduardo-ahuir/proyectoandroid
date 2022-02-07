@@ -12,11 +12,11 @@ using Xamarin.Forms.Xaml;
 
 namespace proyectoandroid.Views
 {
-    public partial class ItemsPage : ContentPage
+    public partial class Añadir : ContentPage
     {
         ItemsViewModel _viewModel;
 
-        public ItemsPage()
+        public Añadir()
         {
             InitializeComponent();
 

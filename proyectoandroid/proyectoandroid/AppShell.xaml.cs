@@ -13,6 +13,8 @@ namespace proyectoandroid
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(Añadir), typeof(Añadir));
+            Routing.RegisterRoute(nameof(Generar), typeof(Generar));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
