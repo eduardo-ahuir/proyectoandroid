@@ -60,9 +60,9 @@ namespace proyectoandroid.Views
 
                 try
                 {
-                    if (usuario.Text.Equals(allusers[i].usuario))
+                    if (String.IsNullOrEmpty(usuario.Text)&&usuario.Text.Equals(allusers[i].usuario))
                     {
-                        if (allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
+                        if (String.IsNullOrEmpty(contraseña.Text)&&allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
                         {
 
 
