@@ -52,13 +52,13 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" class="texto" FontAttributes="Bold" HorizontalOptions="Center" Grid.ColumnSpan="6"/>
+        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" class="texto" FontAttributes="Bold" HorizontalOptions="Center" Grid.ColumnSpan="6" x:Name="Nombre"/>
         <BoxView Grid.Column="0" class="containerd" Grid.RowSpan="14"/>
-        <Image Source="https://cdn.discordapp.com/attachments/767154058272178261/878789525151825951/medium-838b83c553eeca3aabb66f72ee2648141bdf7dc7.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="14"/>
+        <Image Source="https://cdn.discordapp.com/attachments/767154058272178261/878789525151825951/medium-838b83c553eeca3aabb66f72ee2648141bdf7dc7.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="14" x:Name="Url"/>
             
-        <Label Grid.Column="1" Grid.Row="15" Text="Clase:Guerrero" Grid.ColumnSpan="2" class="texto" />
+        <Label Grid.Column="1" Grid.Row="15" Text="Clase:" Grid.ColumnSpan="2" class="texto" x:Name="Clase"/>
          
-            <Label Grid.Column="3" Grid.Row="15" Text="Raza:Hipotido"  Grid.ColumnSpan="2" class="texto"  />
+            <Label Grid.Column="3" Grid.Row="15" Text="Raza:"  Grid.ColumnSpan="2" class="texto" x:Name="Raza" />
 
 
 
@@ -94,19 +94,19 @@
 
         
         <BoxView Grid.Row="17" class="containert"/>
-        <Label Text="Rasgo:" Grid.Row="17" class="containertext" />
+        <Label Text="Rasgo:" Grid.Row="17" class="containertext" x:Name="Rasgo" Grid.ColumnSpan="6" HorizontalOptions="Start" />
         <BoxView Grid.Row="18" class="containert"/>
-        <Label Text="Ideal:" Grid.Row="18" class="containertext" />
+        <Label Text="Ideal:" Grid.Row="18" class="containertext" x:Name="Ideal" Grid.ColumnSpan="6" HorizontalOptions="Start"/>
         <BoxView Grid.Row="19" class="containert"/>
-        <Label Text="Vinculo:" Grid.Row="19" class="containertext"  />
+        <Label Text="Vinculo:" Grid.Row="19" class="containertext"  x:Name="Vinculo" Grid.ColumnSpan="6" HorizontalOptions="Start"/>
         <BoxView Grid.Row="20" class="containert"/>
-        <Label Text="Defecto:" Grid.Row="20" class="containertext"/>
+        <Label Text="Defecto:" Grid.Row="20" class="containertext" x:Name="Defecto" Grid.ColumnSpan="6" HorizontalOptions="Start"/>
         <BoxView Grid.Row="21" class="containert"/>
-        <Label Text="Moral:"   Grid.Row="21" class="containertext"/>
+        <Label Text="Moral:"   Grid.Row="21" class="containertext" x:Name="Moral" Grid.ColumnSpan="6" HorizontalOptions="Start"/>
         <BoxView Grid.Row="22" class="containert"/>
-        <Label Text="Objeto:"  Grid.Row="22" class="containertext"/>
+        <Label Text="Objeto:"  Grid.Row="22" class="containertext" x:Name="Objeto" Grid.ColumnSpan="6" HorizontalOptions="Start"/>
         
-        <Picker Title="Clase" Grid.Column="0" class="Picker">
+        <Picker Title="Clase" Grid.Column="0" class="Picker" x:Name="claseselect">
             <Picker.Items>
                 <x:String>Barbaro</x:String>
                 <x:String>Bardo</x:String>
@@ -124,7 +124,7 @@
 
 
         </Picker>
-        <Picker Title="Raza" Grid.Column="3" class="Picker">
+        <Picker Title="Raza" Grid.Column="3" class="Picker" x:Name="razaselect">
             <Picker.Items>
                 <x:String>Araina</x:String>
                 <x:String>Batrok</x:String>
@@ -154,7 +154,7 @@
 
 
         </Picker>
-        <Button Grid.Row="25" Text="Generar" class="generabutn"/>
+        <Button Grid.Row="25" Text="Generar" class="generabutn" Clicked="GeneraRandom"/>
     
     </Grid>
     
