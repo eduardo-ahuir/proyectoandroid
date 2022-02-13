@@ -69,15 +69,13 @@ namespace proyectoandroid.Views
                             await Shell.Current.GoToAsync("//Generar");
 
                         }
-                        else { await DisplayAlert("Error", "usuario o contraseña incorrectos", "Aceptar"); }
-                        break;
+                        
 
 
 
 
                     }
-                    else { await DisplayAlert("Error", "usuario o contraseña incorrectos", "Aceptar"); }
-                    break;
+                    
 
                 }
                 catch (System.ArgumentNullException) {
