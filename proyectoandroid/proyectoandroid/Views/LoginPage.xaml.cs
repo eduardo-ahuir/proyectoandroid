@@ -63,8 +63,10 @@ namespace proyectoandroid.Views
                     if (allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
                     {
 
+                       
                         await Shell.Current.GoToAsync("//Generar");
-
+                        usuario.Text = String.Empty;
+                        contraseña.Text = String.Empty;
                     }
 
 
