@@ -36,7 +36,7 @@ namespace proyectoandroid.Views
 
         public async void login()
         {
-            var allusers = await firebaseHelper.GetAllPersonajes();
+            var allusers = await firebaseHelper.GetAllusurios();
             UTF8Encoding enc = new UTF8Encoding();
             byte[] data = enc.GetBytes(contraseña.Text);
             byte[] result;

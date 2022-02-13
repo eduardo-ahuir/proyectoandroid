@@ -37,13 +37,24 @@ namespace CRUDFireBase.Helper
                   Inteligencia=item.Object.Inteligencia,
                   Sabiduria=item.Object.Sabiduria,
                   Carisma=item.Object.Carisma,
-                  usuario=item.Object.usuario,
-                  contraseña=item.Object.contraseña,
 
               }).ToList();
         
         }
-        
+        public async Task<List<Personaje>> GetAllusurios()
+        {
+
+            return (await firebase
+              .Child("generapjs-5a-default-rtdb")
+              .OnceAsync<Personaje>()).Select(item => new Personaje
+              {
+                 usuario=item.Object.usuario,
+                 contraseña=item.Object.contraseña,
+
+              }).ToList();
+
+        }
+
 
         public async Task AddPersonaje(int idpersonaje,string nombre,string clase,string raza,string url,string rasgo,string ideal,string vinculo,string defecto,string objeto,string alineamiento,int fuerza, int destreza, int contitucion,int inteligencia,int sabiduria,int carisma)
         {

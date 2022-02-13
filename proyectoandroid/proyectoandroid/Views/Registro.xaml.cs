@@ -53,13 +53,13 @@ namespace proyectoandroid.Views
 
             for (int i = 0; i < allusers.Count; i++)
             {
-                if (usuarior.Text.Equals(allusers[i].usuario))
+                if (!String.IsNullOrEmpty(usuarior.Text)&&usuarior.Text.Equals(allusers[i].usuario))
                 {
                     await DisplayAlert("Error", "ese usuario ya existe", "Aceptar");
                     usuarior.Text = String.Empty;
                 }
                 else {
-                    if (contraseñar.Text.Equals(contraseñar2.Text))
+                    if (!String.IsNullOrEmpty(contraseñar.Text) && contraseñar.Text.Equals(contraseñar2.Text))
                     {
                         await DisplayAlert("Exito", "Usuario registrado correctamente", "Aceptar");
                         Error.IsVisible = false;

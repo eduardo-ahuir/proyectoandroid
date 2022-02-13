@@ -15,6 +15,8 @@ namespace proyectoandroid.Views
     public partial class Generar : ContentPage
     {
         int idpersonajeal = 0;
+        string usuario = "0";
+        string contraseña = "0";
         public Generar()
         {
             InitializeComponent();
@@ -101,7 +103,7 @@ namespace proyectoandroid.Views
             Random rnd = new Random(Guid.NewGuid().GetHashCode());
 
 
-            Boolean loop = true;
+            
 
 
             for (int i = 0; i < allIds.Count; i++)
@@ -115,7 +117,7 @@ namespace proyectoandroid.Views
                     {
 
                         idpersonajeal = allIds[idaleat].Idpersonaje;
-                        loop = false;
+                        
 
                     }
 
@@ -159,14 +161,14 @@ namespace proyectoandroid.Views
                 if (claseselect.SelectedItem != null)
                 {
                     GetPersonajeaclase();
-                    razaselect.SelectedItem = null;
+                    
                 }
                 else
                 {
                     if (razaselect.SelectedItem != null)
                     {
                         GetPersonajearaza();
-                        claseselect.SelectedItem = null;
+                        
                     }
                     else { GetPersonajeal(); }
                 }
@@ -181,8 +183,8 @@ namespace proyectoandroid.Views
             {
                 limpiar();
                 Nombre.Text = personaje.Nombre.ToString();
-                Clase.Text = "Clase:" + personaje.Clase;
-                Raza.Text = "Raza:" + personaje.Raza;
+                Clase.Text = "clase:" + personaje.Clase;
+                Raza.Text = "clase:" + personaje.Raza;
                 Url.Source = personaje.URL;
                 Rasgo.Text = Rasgo.Text + personaje.Rasgo;
                 Ideal.Text = Ideal.Text + personaje.Ideal;

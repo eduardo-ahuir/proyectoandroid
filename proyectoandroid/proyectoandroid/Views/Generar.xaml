@@ -52,9 +52,9 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <Label Text="" FontSize="28" Grid.Column="0" Grid.Row="0" class="texto" FontAttributes="Bold" HorizontalOptions="Center" Grid.ColumnSpan="6" x:Name="Nombre"/>
+        <Label Text="Gerit" FontSize="28" Grid.Column="0" Grid.Row="0" class="texto" FontAttributes="Bold" HorizontalOptions="Center" Grid.ColumnSpan="6" x:Name="Nombre"/>
         <BoxView Grid.Column="0" class="containerd" Grid.RowSpan="14"/>
-        <Image Source="" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="14" x:Name="Url"/>
+        <Image Source="https://cdn.discordapp.com/attachments/767154058272178261/878789525151825951/medium-838b83c553eeca3aabb66f72ee2648141bdf7dc7.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="14" x:Name="Url"/>
             
         <Label Grid.Column="1" Grid.Row="15" Text="Clase:" Grid.ColumnSpan="2" class="texto" x:Name="Clase"/>
          
@@ -68,28 +68,28 @@
 
 
         <Label Text="FUE" Grid.Column="0" Grid.Row="16" class="stat"/>
-        <Label Text=""  Grid.Column="0" Grid.Row="16" class="stat2" x:Name="fuem"/>
-        <Label Text=""  Grid.Column="0" Grid.Row="16" class="stat3" x:Name="fuen"/>
+        <Label Text="+5"  Grid.Column="0" Grid.Row="16" class="stat2" x:Name="fuem"/>
+        <Label Text="20"  Grid.Column="0" Grid.Row="16" class="stat3" x:Name="fuen"/>
         <BoxView Grid.Column="1" class="containern"/>
         <Label Text="DES" Grid.Column="1" Grid.Row="16" class="stat" />
-        <Label Text="" Grid.Column="1" Grid.Row="16" class="stat2" x:Name="desm"/>
-        <Label Text=""  Grid.Column="1" Grid.Row="16" class="stat3" x:Name="desn"   />
+        <Label Text="+5" Grid.Column="1" Grid.Row="16" class="stat2" x:Name="desm"/>
+        <Label Text="20"  Grid.Column="1" Grid.Row="16" class="stat3" x:Name="desn"   />
         <BoxView Grid.Column="2" class="containern" />
         <Label Text="CON" Grid.Column="2" Grid.Row="16" class="stat"/>
-        <Label Text=""  Grid.Column="2" Grid.Row="16" class="stat2" x:Name="conm"/>
-        <Label Text=""  Grid.Column="2" Grid.Row="16" class="stat3" x:Name="conn"/>
+        <Label Text="+5"  Grid.Column="2" Grid.Row="16" class="stat2" x:Name="conm"/>
+        <Label Text="20"  Grid.Column="2" Grid.Row="16" class="stat3" x:Name="conn"/>
         <BoxView Grid.Column="3" class="containern"/>
         <Label Text="INT" Grid.Column="3" Grid.Row="16" class="stat"/>
-        <Label Text=""  Grid.Column="3" Grid.Row="16" class="stat2" x:Name="intm"/>
-        <Label Text=""  Grid.Column="3" Grid.Row="16" class="stat3" x:Name="intn" />
+        <Label Text="+5"  Grid.Column="3" Grid.Row="16" class="stat2" x:Name="intm"/>
+        <Label Text="20"  Grid.Column="3" Grid.Row="16" class="stat3" x:Name="intn" />
         <BoxView Grid.Column="4" class="containern"/>
         <Label Text="SAB" Grid.Column="4" Grid.Row="16" class="stat"/>
-        <Label Text=""  Grid.Column="4" Grid.Row="16" class="stat2" x:Name="sabm"/>
-        <Label Text=""  Grid.Column="4" Grid.Row="16" class="stat3" x:Name="sabn"/>
+        <Label Text="+5"  Grid.Column="4" Grid.Row="16" class="stat2" x:Name="sabm"/>
+        <Label Text="20"  Grid.Column="4" Grid.Row="16" class="stat3" x:Name="sabn"/>
         <BoxView Grid.Column="5" class="containern"/>
         <Label Text="CAR" Grid.Column="5" Grid.Row="16" class="stat"/>
-        <Label Text=""  Grid.Column="5" Grid.Row="16" class="stat2" x:Name="carm"/>
-        <Label Text=""  Grid.Column="5" Grid.Row="16" class="stat3" x:Name="carn"/>
+        <Label Text="+5"  Grid.Column="5" Grid.Row="16" class="stat2" x:Name="carm"/>
+        <Label Text="20"  Grid.Column="5" Grid.Row="16" class="stat3" x:Name="carn"/>
 
 
         
@@ -154,7 +154,7 @@
 
 
         </Picker>
-        <Button Grid.Row="25" Text="Generar" class="generabutn" Clicked="GeneraRandom"/>
+        <Button Grid.Row="25" Text="Generar" class="generabutn" Clicked="GeneraRandom" x:Name="pruebas"/>
     
     </Grid>
     
