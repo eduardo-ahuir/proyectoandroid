@@ -10,9 +10,8 @@
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Entry Placeholder="usuario" x:Name="usuario"/>
-            
+
             <Entry Placeholder="contraseña" IsPassword="True" x:Name="contraseña"/>
-            <Label Text="Error Usuario o contraseña incorrectos" IsVisible="false" class="Error" x:Name="Error"/>
             <Button VerticalOptions="Center" Text="iniciar sesion" Clicked="Login"/>
             <Button VerticalOptions="Center" Text="registrarte" Clicked="iraregistro"/>
         </StackLayout>

@@ -30,10 +30,10 @@ namespace proyectoandroid.Views
             
 
         }
-        
-        
-        
-        
+
+
+
+
         public async void login()
         {
             var allusers = await firebaseHelper.GetAllPersonajes();
@@ -58,24 +58,34 @@ namespace proyectoandroid.Views
             for (int i = 0; i < allusers.Count; i++)
             {
 
-                if (usuario.Text.Equals(allusers[i].usuario))
+                try
                 {
-                    if (allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
+                    if (usuario.Text.Equals(allusers[i].usuario))
                     {
+                        if (allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
+                        {
 
-                        
-                        await Shell.Current.GoToAsync("//Generar");
+
+                            await Shell.Current.GoToAsync("//Generar");
+
+                        }
+                        else { await DisplayAlert("Error", "usuario o contraseña incorrectos", "Aceptar"); }
+                        break;
+
+
+
 
                     }
+                    else { await DisplayAlert("Error", "usuario o contraseña incorrectos", "Aceptar"); }
+                    break;
 
-
-
+                }
+                catch (System.ArgumentNullException) {
+                    await DisplayAlert("Error", "usuario o contraseña incorrectos", "Aceptar");
                 }
 
 
-            }
-
-
+        }
         }
 
         private void Login(object sender, EventArgs e)
