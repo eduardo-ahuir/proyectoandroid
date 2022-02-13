@@ -17,8 +17,14 @@ namespace CRUDFireBase.Model
         public string Defecto { get; set; }
         public string Objeto { get; set; }
         public string Alineamiento { get; set; }
-
-
+        public int Fuerza { get; set; }
+        public int Destreza { get; set; }
+        public int Constitución { get; set; }
+        public int Inteligencia { get; set; }
+        public int Sabiduria { get; set; }
+        public int Carisma { get; set; }
+        public string usuario { get; set; }
+        public string contraseña { get; set; }
 
 
     }

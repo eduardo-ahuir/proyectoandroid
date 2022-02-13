@@ -120,8 +120,8 @@
             </Picker>
             <Button x:Name="Añadirbtn" Grid.Column="0" Grid.Row="18" Text="Añadir" Grid.ColumnSpan="3" Clicked="Añadirpjs"/>
             <Button Grid.Column="3" Grid.Row="18" Text="Buscar" Grid.ColumnSpan="3" Clicked="BtnRetrive_Clicked" />
-            <Button Grid.Column="3" Grid.Row="19" Text="Editar" Grid.ColumnSpan="3" Clicked="Updatepjs"/>
-            <Button Grid.Column="0" Grid.Row="19" Text="Borrar" Grid.ColumnSpan="3" Clicked="Borrapjs"/>
+            <Button Grid.Column="3" Grid.Row="19" Text="Editar" Grid.ColumnSpan="3" Clicked="Updatepjs" IsEnabled="False" x:Name="editar"/>
+            <Button Grid.Column="0" Grid.Row="19" Text="Borrar" Grid.ColumnSpan="3" Clicked="Borrapjs" IsEnabled="False" x:Name="borrar"/>
             <Entry Grid.Column="0" Grid.Row="20" Placeholder="Id Personaje" Grid.ColumnSpan="6" x:Name="Id"/>
 
         </Grid>

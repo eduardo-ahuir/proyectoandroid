@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoandroid.Views.Registro"
+             Visual="Material">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Entry Placeholder="usuario" x:Name="usuarior"/>
+            <Entry Placeholder="contraseña" IsPassword="True" x:Name="contraseñar"/>
+            <Entry Placeholder="confirma la contraseña" IsPassword="True" x:Name="contraseñar2"/>
+            <Label Text="Error las contraseñas no coinciden" HorizontalOptions="Center" IsVisible="false" x:Name="Error"/>
+
+            <Button VerticalOptions="Center" Text="Registrarse" Clicked="registro"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

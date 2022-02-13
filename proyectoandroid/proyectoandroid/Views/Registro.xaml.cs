@@ -1,44 +1,41 @@
-﻿using proyectoandroid.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using proyectoandroid.ViewModels;
 using Xamarin.Forms.Xaml;
 using CRUDFireBase.Helper;
+using Xamarin.Forms;
 using System.Security.Cryptography;
 
 namespace proyectoandroid.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class Registro : ContentPage
     {
-        public LoginPage()
+        public Registro()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
         }
         FirebaseHelper firebaseHelper = new FirebaseHelper();
+        private async void registro(object sender, EventArgs e)
+        {
+            register();
 
 
-
-
-
-
-        public void hash() {
-            
 
         }
-        
-        
-        
-        
-        public async void login()
+
+
+        public async void register()
         {
+
             var allusers = await firebaseHelper.GetAllPersonajes();
             UTF8Encoding enc = new UTF8Encoding();
-            byte[] data = enc.GetBytes(contraseña.Text);
+            byte[] data = enc.GetBytes(contraseñar.Text);
             byte[] result;
             SHA256CryptoServiceProvider sha = new SHA256CryptoServiceProvider();
             result = sha.ComputeHash(data);
@@ -54,37 +51,31 @@ namespace proyectoandroid.Views
             sb.ToString().ToUpper();
 
 
-
             for (int i = 0; i < allusers.Count; i++)
             {
-
-                if (usuario.Text.Equals(allusers[i].usuario))
+                if (usuarior.Text.Equals(allusers[i].usuario))
                 {
-                    if (allusers[i].contraseña.Equals(sb.ToString().ToUpper()))
-                    {
-
-                        await Shell.Current.GoToAsync("//Generar");
-
-                    }
-
-
-
+                    await DisplayAlert("Error", "ese usuario ya existe", "Aceptar");
+                    usuarior.Text = String.Empty;
                 }
-
-
+                else {
+                    if (contraseñar.Text.Equals(contraseñar2.Text))
+                    {
+                        await DisplayAlert("Exito", "Usuario registrado correctamente", "Aceptar");
+                        Error.IsVisible = false;
+                        await firebaseHelper.Addusuario(usuarior.Text, sb.ToString().ToUpper());
+                        await Shell.Current.GoToAsync("//LoginPage");
+                        
+                    }
+                    else { Error.IsVisible=true; }
+                     
+                }
+                
+                
             }
 
 
-        }
 
-        private void Login(object sender, EventArgs e)
-        {
-            login();
-        }
-
-        private void iraregistro(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Registro());
         }
     }
 }

@@ -31,18 +31,26 @@ namespace CRUDFireBase.Helper
                   Defecto = item.Object.Defecto,
                   Objeto = item.Object.Objeto,
                   Alineamiento= item.Object.Alineamiento,
+                  Fuerza = item.Object.Fuerza,
+                  Destreza = item.Object.Destreza,
+                  Constitución=item.Object.Constitución,
+                  Inteligencia=item.Object.Inteligencia,
+                  Sabiduria=item.Object.Sabiduria,
+                  Carisma=item.Object.Carisma,
+                  usuario=item.Object.usuario,
+                  contraseña=item.Object.contraseña,
 
               }).ToList();
         
         }
         
 
-        public async Task AddPersonaje(int idpersonaje,string nombre,string clase,string raza,string url,string rasgo,string ideal,string vinculo,string defecto,string objeto,string alineamiento)
+        public async Task AddPersonaje(int idpersonaje,string nombre,string clase,string raza,string url,string rasgo,string ideal,string vinculo,string defecto,string objeto,string alineamiento,int fuerza, int destreza, int contitucion,int inteligencia,int sabiduria,int carisma)
         {
 
             await firebase
               .Child("generapjs-5a-default-rtdb")
-              .PostAsync(new Personaje() { Idpersonaje=idpersonaje,Nombre=nombre,Clase=clase,Raza=raza,URL=url,Rasgo=rasgo,Ideal=ideal,Vinculo=vinculo,Defecto=defecto,Objeto=objeto,Alineamiento=alineamiento });
+              .PostAsync(new Personaje() { Idpersonaje=idpersonaje,Nombre=nombre,Clase=clase,Raza=raza,URL=url,Rasgo=rasgo,Ideal=ideal,Vinculo=vinculo,Defecto=defecto,Objeto=objeto,Alineamiento=alineamiento,Fuerza=fuerza,Destreza=destreza,Constitución=contitucion,Inteligencia=inteligencia,Sabiduria=sabiduria,Carisma=carisma });
         }
 
         public async Task<Personaje> GetPersonaje(int idpersonaje)
@@ -65,7 +73,7 @@ namespace CRUDFireBase.Helper
             await firebase
               .Child("generapjs-5a-default-rtdb")
               .Child(toUpdatePersonaje.Key)
-              .PutAsync(new Personaje() { Idpersonaje = idpersonaje, Nombre = nombre, Clase = clase, Raza = raza, URL = url, Rasgo = rasgo, Ideal = ideal, Vinculo = vinculo, Defecto = defecto, Objeto = objeto,Alineamiento=alineamiento });
+              .PutAsync(new Personaje() { Idpersonaje = idpersonaje, Nombre = nombre, Clase = clase, Raza = raza, URL = url, Rasgo = rasgo, Ideal = ideal, Vinculo = vinculo, Defecto = defecto, Objeto = objeto,Alineamiento=alineamiento});
         }
 
         public async Task DeletePersonaje(int idpersonaje)
@@ -77,7 +85,13 @@ namespace CRUDFireBase.Helper
 
         }
 
-        
+        public async Task Addusuario(string usuario,string contraseña  )
+        {
+
+            await firebase
+              .Child("generapjs-5a-default-rtdb")
+              .PostAsync(new Personaje() { usuario=usuario,contraseña=contraseña });
+        }
 
 
 
