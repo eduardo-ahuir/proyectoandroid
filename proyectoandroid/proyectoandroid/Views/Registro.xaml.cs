@@ -65,6 +65,7 @@ namespace proyectoandroid.Views
                         Error.IsVisible = false;
                         await firebaseHelper.Addusuario(usuarior.Text, sb.ToString().ToUpper());
                         await Shell.Current.GoToAsync("//LoginPage");
+                        break;
                         
                     }
                     else { Error.IsVisible=true; }

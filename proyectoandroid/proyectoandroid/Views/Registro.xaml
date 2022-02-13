@@ -8,7 +8,7 @@
             <Entry Placeholder="usuario" x:Name="usuarior"/>
             <Entry Placeholder="contraseña" IsPassword="True" x:Name="contraseñar"/>
             <Entry Placeholder="confirma la contraseña" IsPassword="True" x:Name="contraseñar2"/>
-            <Label Text="Error las contraseñas no coinciden" HorizontalOptions="Center" IsVisible="false" x:Name="Error"/>
+            <Label Text="Error las contraseñas no coinciden" HorizontalOptions="Center" IsVisible="false" x:Name="Error" class="Error"/>
 
             <Button VerticalOptions="Center" Text="Registrarse" Clicked="registro"/>
             
